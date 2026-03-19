@@ -1,0 +1,50 @@
+body {
+    background: #111;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+}
+
+.card video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Capa del texto */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+/* Cuando pasas el mouse */
+.card:hover .overlay {
+    opacity: 1;
+}
