@@ -7,6 +7,46 @@
 </head>
 <body>
 
+<script>
+// 🔐 Datos correctos
+const correoCorrecto = "faritzaragoza2018@gmail.com";
+const contraseñaCorrecta = "7a8b3020";
+const codigoCorrecto = "302030";
+
+// Paso 1: correo
+let correo = prompt("Ingresa tu correo:");
+if (correo !== correoCorrecto) {
+    alert("Correo incorrecto");
+    bloquear();
+}
+
+// Paso 2: contraseña
+let contraseña = prompt("Ingresa tu contraseña:");
+if (contraseña !== contraseñaCorrecta) {
+    alert("Contraseña incorrecta");
+    bloquear();
+}
+
+// Paso 3: simular envío de código
+alert("Código enviado a tu correo");
+
+// Paso 4: pedir código
+let codigo = prompt("Ingresa el código de verificación:");
+if (codigo !== codigoCorrecto) {
+    alert("Código incorrecto");
+    bloquear();
+}
+
+// Acceso correcto
+alert("Acceso concedido");
+
+// Función para bloquear acceso
+function bloquear() {
+    document.body.innerHTML = "<h1 style='color:white;text-align:center;margin-top:50px;'>Acceso bloqueado</h1>";
+    throw new Error("Acceso bloqueado");
+}
+</script>
+
 <nav>
   <h2>Mi Streaming</h2>
   <a href="pdfs.html">Ver PDFs</a>
@@ -18,21 +58,21 @@
 
   <div class="card">
     <video controls>
-      <source src="https://priawqzrfajnmjrxnaog.supabase.co/storage/v1/object/public/videos/fin.mp4">
+      <source src="https://priawqzrfajnmjrxnaog.supabase.co/storage/v1/object/public/videos/fin.mp4" type="video/mp4">
     </video>
     <p class="descripcion">Servidor con Mercado Pago</p>
   </div>
 
   <div class="card">
     <video controls>
-      <source src="https://priawqzrfajnmjrxnaog.supabase.co/storage/v1/object/public/videos/ia%20qr%20pago.mp4">
+      <source src="https://priawqzrfajnmjrxnaog.supabase.co/storage/v1/object/public/videos/ia%20qr%20pago.mp4" type="video/mp4">
     </video>
     <p class="descripcion">Servidor con Stripe, 2FA e IA</p>
   </div>
 
   <div class="card">
     <video controls>
-      <source src="https://priawqzrfajnmjrxnaog.supabase.co/storage/v1/object/public/videos/pagos%20.mp4">
+      <source src="https://priawqzrfajnmjrxnaog.supabase.co/storage/v1/object/public/videos/pagos%20.mp4" type="video/mp4">
     </video>
     <p class="descripcion">Servidor con Supabase</p>
   </div>
