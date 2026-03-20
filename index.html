@@ -7,53 +7,34 @@
 </head>
 <body>
 
-<script>
-// 🔐 Datos de acceso
-const correoCorrecto = "faritzaragoza2018@gmail.com";
-const contraseñaCorrecta = "7a8b3020";
+<nav>
+  <h2>Mi Streaming</h2>
+  <a href="pdfs.html">Ver PDFs</a>
+</nav>
 
-// Pedir datos
-let correo = prompt("Ingresa tu correo:");
-let contraseña = prompt("Ingresa tu contraseña:");
-
-// Validar
-if (correo !== correoCorrecto || contraseña !== contraseñaCorrecta) {
-    alert("Acceso denegado");
-    document.body.innerHTML = "<h1 style='color:white;text-align:center;margin-top:50px;'>Acceso bloqueado</h1>";
-} else {
-    alert("Bienvenido");
-}
-</script>
-
-<h1>Mi Streaming</h1>
+<h1>Videos</h1>
 
 <div class="contenedor">
 
   <div class="card">
     <video controls>
-      <source src="https://priawqzrfajnmjrxnaog.supabase.co/storage/v1/object/public/videos/fin.mp4" type="video/mp4">
+      <source src="https://priawqzrfajnmjrxnaog.supabase.co/storage/v1/object/public/videos/fin.mp4">
     </video>
-    <p class="descripcion">
-      Servidor con Mercado Pago: Un backend en Express que recibe productos, crea pagos y redirige según el resultado.
-    </p>
+    <p class="descripcion">Servidor con Mercado Pago</p>
   </div>
 
   <div class="card">
     <video controls>
-      <source src="https://priawqzrfajnmjrxnaog.supabase.co/storage/v1/object/public/videos/ia%20qr%20pago.mp4" type="video/mp4">
+      <source src="https://priawqzrfajnmjrxnaog.supabase.co/storage/v1/object/public/videos/ia%20qr%20pago.mp4">
     </video>
-    <p class="descripcion">
-      Servidor con Stripe, 2FA e IA: Pagos con Stripe, autenticación en dos pasos y chat IA automotriz.
-    </p>
+    <p class="descripcion">Servidor con Stripe, 2FA e IA</p>
   </div>
 
   <div class="card">
     <video controls>
-      <source src="https://priawqzrfajnmjrxnaog.supabase.co/storage/v1/object/public/videos/pagos%20.mp4" type="video/mp4">
+      <source src="https://priawqzrfajnmjrxnaog.supabase.co/storage/v1/object/public/videos/pagos%20.mp4">
     </video>
-    <p class="descripcion">
-      Servidor con Supabase: Permite subir, guardar y consultar videos desde base de datos.
-    </p>
+    <p class="descripcion">Servidor con Supabase</p>
   </div>
 
 </div>
