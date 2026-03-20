@@ -1,10 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+  <meta charset="UTF-8">
   <title>Streaming App</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<script>
+// 🔐 Datos de acceso
+const correoCorrecto = "faritzaragoza2018@gmail.com";
+const contraseñaCorrecta = "7a8b3020";
+
+// Pedir datos
+let correo = prompt("Ingresa tu correo:");
+let contraseña = prompt("Ingresa tu contraseña:");
+
+// Validar
+if (correo !== correoCorrecto || contraseña !== contraseñaCorrecta) {
+    alert("Acceso denegado");
+    document.body.innerHTML = "<h1 style='color:white;text-align:center;margin-top:50px;'>Acceso bloqueado</h1>";
+} else {
+    alert("Bienvenido");
+}
+</script>
 
 <h1>Mi Streaming</h1>
 
